@@ -35,3 +35,15 @@
         - http://localhost:3000/sign-up
         - http://localhost:3000/forgot-password
         - http://localhost:3000/offers
+
+## Create the header component
+
+    todo:
+    1.  components/Header.jsx
+        - rafc
+        - setup code header
+    2.  App.js
+        - import dan pasang Header
+    3.  npm start : http://localhost:3000
+        - klik: home, Offers, Sign in
+
