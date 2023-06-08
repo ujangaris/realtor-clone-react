@@ -127,3 +127,18 @@
           akan ada data user baru yang terbuat
         - untuk setDoc lihat pada firebase kemudian Firestore
           akan ada data baru terbuat
+
+### Pasang Toastify
+
+    todo:
+    1.  install toastify
+        npm install react-toastify
+    2.  App.js
+        - import dan pasang ToastContainer
+        - react-toastify css
+    3.  pages/SignUp.jsx
+        - import dan pasang toastify
+    4.  npm start : http://localhost:3000/sign-up
+        - coba lakukan insert data user baru/register user jika berhasil akan ada notifikasi
+          dan  diredirect kehalaman home
+        - coba juga register dengan data yang kosong, akan ada notifikasi gagal dari toastify

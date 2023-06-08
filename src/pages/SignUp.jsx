@@ -9,6 +9,7 @@ import {
 } from 'firebase/auth'
 import { db } from '../firebase'
 import { doc, serverTimestamp, setDoc } from 'firebase/firestore'
+import { toast } from 'react-toastify'
 
 export const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false)
@@ -48,9 +49,11 @@ export const SignUp = () => {
       formDataCopy.timestamp = serverTimestamp()
 
       await setDoc(doc(db, 'users', user.uid), formDataCopy)
+      toast.success('Sign up wa successfully!')
       navigate('/')
     } catch (error) {
-      console.log(error)
+      // console.log(error)
+      toast.error('Something went wrong with the registration!')
     }
   }
   return (
