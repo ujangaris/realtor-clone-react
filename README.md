@@ -176,3 +176,18 @@
         - lihat pada firebase , lalu pilih Firestore Database
           akan ada data baru dengan logo google, yang menandakan register dengan google berhasil
         - jika register dengan data google/email yang sudah terdaftar tidak akan membuat data user baru!
+
+### Complete the Sign in functionality
+
+    todo:
+    1.  pages/SignIn.jsx
+        - import dan pasang: getAuth, signInWithEmailAndPassword
+        - import dan pasang useNavigate()
+        - pasang function onSubmit
+        - jika data user yang di input ada/sama dengan di database
+        - pasang toastify
+    2.  npm start : http://localhost:3000/sign-in
+        - login dengan user terdaftar
+        - jika berhasil akan diredirect ke halaman home
+        - akan ada notifikasi dari toastify login successfully
+        - jika login dengan data yang salah , akan ada notifikasi gagal
