@@ -1,6 +1,8 @@
 # Realtor Clone Reactjs
 
-## Setup Favicon & Tailwindcss
+## Bagian 2: Installation and first template
+
+### Setup Favicon & Tailwindcss
 
     todo:
     1.  favicon generator:
@@ -10,7 +12,7 @@
         - ikuti semua configuration
     3.  npm start : http://localhost:3000
 
-## Create page and routes
+### Create page and routes
 
     todo:
     1.  install reac-router-dom v6
@@ -36,7 +38,7 @@
         - http://localhost:3000/forgot-password
         - http://localhost:3000/offers
 
-## Create the header component
+### Create the header component
 
     todo:
     1.  components/Header.jsx
@@ -47,3 +49,25 @@
     3.  npm start : http://localhost:3000
         - klik: home, Offers, Sign in
 
+## Bagian 3: Authentication using Firebase auth versin 9
+
+### Create Sign in page
+
+    todo:
+    1.  install tailwindcss form
+        - npm install -D @tailwindcss/forms
+        - docs : https://github.com/tailwindlabs/tailwindcss-forms
+    2.  tailwind.config.js
+        - pasang tailwind form
+    3.  install react icons
+        - npm install react-icons
+        - docs : https://react-icons.github.io/react-icons/
+    4.  src/index.css
+        - styling body
+    5.  pages/SignIn.jsx
+        - Content Sign In
+    6.  components/OAuth.jsx
+        - membuat button OAuth yang bisa dipanggil berulang2(sign-in page & sign-up page)
+    7.  npm start : http://localhost:3000
+        - klik: Sign in
+        - akan tampil halaman sign in yang isinya ada form dan button

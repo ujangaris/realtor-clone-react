@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export const Header = () => {
   const location = useLocation()
   //   console.log(location.pathname)
   const navigate = useNavigate()
-  function pathMathRoute(route) {
+  function pathMatchRoute(route) {
     if (route === location.pathname) {
       return true
     }
@@ -26,7 +26,7 @@ export const Header = () => {
           <ul className='flex space-x-10'>
             <li
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
-                pathMathRoute('/') && 'text-black border-b-red-500'
+                pathMatchRoute('/') && 'text-black border-b-red-500'
               }`}
               onClick={() => navigate('/')}
             >
@@ -34,7 +34,7 @@ export const Header = () => {
             </li>
             <li
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
-                pathMathRoute('/offers') && 'text-black border-b-red-500'
+                pathMatchRoute('/offers') && 'text-black border-b-red-500'
               }`}
               onClick={() => navigate('/offers')}
             >
@@ -42,7 +42,7 @@ export const Header = () => {
             </li>
             <li
               className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
-                pathMathRoute('/sign-in') && 'text-black border-b-red-500'
+                pathMatchRoute('/sign-in') && 'text-black border-b-red-500'
               }`}
               onClick={() => navigate('/sign-in')}
             >
