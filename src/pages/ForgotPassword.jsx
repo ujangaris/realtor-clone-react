@@ -14,7 +14,7 @@ export const ForgotPassword = () => {
         <div className='md:w-[67%] lg:w-[50%] mb-12 md:mb-6'>
           <img
             className='w-full rounded-2xl'
-            src='https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V5fGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60'
+            src='https://images.unsplash.com/photo-1675266873434-5ba73c38ce6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1114&q=80'
             alt='key'
           />
         </div>

@@ -95,3 +95,20 @@
         - akan tampil halaman sign in yang isinya ada form dan button
         - klik Forgot Password
         - akan tampil halaman Forgot Password
+
+### Install firebase in SignUp page
+
+    todo:
+    1.  install firebase
+        - npm install firebase
+    2.  src/firebase.js
+        - paste code dari database firebase yang sudah kita buat
+    3.  pages/SignUp.jsx
+        - docs: https://firebase.google.com/docs/auth/web/start?hl=id
+            - import dan pasang ,getAuth & createUserWithEmailAndPassword
+        - setup database firebase dengan asyncronus & trycatch
+        - buat & pasang function onSubmit
+    4.  npm start : http://localhost:3000/sign-up
+        - coba lakukan insert data user baru/register user
+        - perikasa pada firebase kemudian authentication
+          akan ada data user baru yang terbuat
