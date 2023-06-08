@@ -191,3 +191,16 @@
         - jika berhasil akan diredirect ke halaman home
         - akan ada notifikasi dari toastify login successfully
         - jika login dengan data yang salah , akan ada notifikasi gagal
+
+### Complete the Forgot Password functionality
+
+    todo:
+    1.  pages/ForgotPassword.jsx
+        - import dan pasang: getAuth, sendPasswordResetEmail
+        - pasang function onSubmit
+        - pasang toastify
+    2.  npm start : http://localhost:3000/forgot-password
+        - masukan email yang terdaftar dan yang ingin di reset password nya
+        - buka email , akan ada pesan masuk, kemudian klik link reset password
+        - jika selesai coba login dan masukan password yang baru
+
