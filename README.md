@@ -83,3 +83,15 @@
         - akan tampil halaman sign in yang isinya ada form dan button
         - klik Register
         - akan tampil halaman Sign up
+
+### Create Forgot Password page
+
+    todo:
+    1.  pages/ForgotPassword.jsx
+        - Copy code dari SignIn.jsx dan pastekan
+        - kemudian modifikasi sesuai kebutuhan
+    2.  npm start : http://localhost:3000
+        - klik: Sign
+        - akan tampil halaman sign in yang isinya ada form dan button
+        - klik Forgot Password
+        - akan tampil halaman Forgot Password

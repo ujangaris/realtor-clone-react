@@ -70,7 +70,7 @@ export const SignIn = () => {
               </p>
               <p>
                 <Link
-                  to='forgot-password'
+                  to='/forgot-password'
                   className='text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out'
                 >
                   Forgot Password?
