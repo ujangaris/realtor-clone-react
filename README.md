@@ -71,3 +71,15 @@
     7.  npm start : http://localhost:3000
         - klik: Sign in
         - akan tampil halaman sign in yang isinya ada form dan button
+
+### Create Sign up page
+
+    todo:
+    1.  pages/SignUp.jsx
+        - Copy code dari SignIn.jsx dan pastekan
+        - kemudian modifikasi sesuai kebutuhan
+    2.  npm start : http://localhost:3000
+        - klik: Sign
+        - akan tampil halaman sign in yang isinya ada form dan button
+        - klik Register
+        - akan tampil halaman Sign up
