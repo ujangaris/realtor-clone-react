@@ -158,3 +158,21 @@
             displayName: data nama  dari email google yang kita pilih
         - lihat pada firebase , lalu pilih Authentication
           akan ada data baru dengan logo google, yang menandakan register dengan google berhasil
+
+### OAuth Firestore Database | register with google
+
+    todo:
+    1.  components/OAuth.jsx
+        - import dan pasang: doc, getDoc, serverTimestamp setDoc&
+        - check for the user
+        - jika user tidak exis maka buat data baru
+        - pasang toastify
+        - import dan pasang useNavigate()
+    2.  npm start : http://localhost:3000/sign-up
+        - klik button Sign with Google
+        - lihat pada console.log, akan ada data yang berhasil terbuat :
+            email: data email google yang kita pilih
+            displayName: data nama  dari email google yang kita pilih
+        - lihat pada firebase , lalu pilih Firestore Database
+          akan ada data baru dengan logo google, yang menandakan register dengan google berhasil
+        - jika register dengan data google/email yang sudah terdaftar tidak akan membuat data user baru!
