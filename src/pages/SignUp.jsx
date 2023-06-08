@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { OAuth } from '../components/OAuth'
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from 'firebase/auth'
 import { db } from '../firebase'
+import { doc, serverTimestamp, setDoc } from 'firebase/firestore'
 
 export const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false)
@@ -13,6 +18,8 @@ export const SignUp = () => {
     password: '',
   })
   const { name, email, password } = formData
+  // pasang navigate
+  const navigate = useNavigate()
   function onChange(e) {
     // console.log(e.target.value)
     setFormData((prevState) => ({
@@ -30,8 +37,18 @@ export const SignUp = () => {
         email,
         password
       )
+
+      updateProfile(auth.currentUser, {
+        displayName: name,
+      })
       const user = userCredentials.user
       console.log(user)
+      const formDataCopy = { ...formData }
+      delete formDataCopy.password
+      formDataCopy.timestamp = serverTimestamp()
+
+      await setDoc(doc(db, 'users', user.uid), formDataCopy)
+      navigate('/')
     } catch (error) {
       console.log(error)
     }

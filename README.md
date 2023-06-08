@@ -112,3 +112,18 @@
         - coba lakukan insert data user baru/register user
         - perikasa pada firebase kemudian authentication
           akan ada data user baru yang terbuat
+        - lihat pada console.log, akan ada data yang berhasil terbuat
+
+### Register data users colection in firebase
+
+    todo:
+    1.  pages/SignUp.jsx
+        - updateProfile
+        - import dan pasang setDoc, doc, serverTimestamp
+        - import dan pasang useNavigate
+    2.  npm start : http://localhost:3000/sign-up
+        - coba lakukan insert data user baru/register user jika berhasil akan diredirect kehalaman home
+        - untuk updateProfile : perikasa pada firebase kemudian authentication
+          akan ada data user baru yang terbuat
+        - untuk setDoc lihat pada firebase kemudian Firestore
+          akan ada data baru terbuat
