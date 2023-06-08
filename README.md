@@ -142,3 +142,19 @@
         - coba lakukan insert data user baru/register user jika berhasil akan ada notifikasi
           dan  diredirect kehalaman home
         - coba juga register dengan data yang kosong, akan ada notifikasi gagal dari toastify
+
+### OAuth Authentication | register with google
+
+    todo:
+    1.  components/OAuth.jsx
+        - import dan pasang: GoogleAuthProvider, getAuth, signInWithPopup
+        - docs: https://firebase.google.com/docs/auth/web/google-signin?hl=id
+        - atau pada browser cari firebase authentication
+          setelah masuk cari web trus pilih Google , lalu ikuti documentasi
+    2.  npm start : http://localhost:3000/sign-up
+        - klik button Sign with Google
+        - lihat pada console.log, akan ada data yang berhasil terbuat :
+            email: data email google yang kita pilih
+            displayName: data nama  dari email google yang kita pilih
+        - lihat pada firebase , lalu pilih Authentication
+          akan ada data baru dengan logo google, yang menandakan register dengan google berhasil
