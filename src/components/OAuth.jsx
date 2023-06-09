@@ -26,8 +26,8 @@ export const OAuth = () => {
           timestamp: serverTimestamp(),
         })
       }
-      toast.success('Registered with Google successfully!')
-      navigate('/sign-in')
+      toast.success('Login with Google successfully!')
+      navigate('/')
     } catch (error) {
       toast.error('Could not authorize with Google!')
       console.log(error)

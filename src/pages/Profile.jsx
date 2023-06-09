@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { getAuth } from 'firebase/auth'
 
 export const Profile = () => {
+  const auth = getAuth()
   // deklarasi hooks
   const [formData, setFormData] = useState({
-    name: 'Ujang',
-    email: 'ujangaja@gmail.com',
+    name: auth.currentUser.displayName,
+    email: auth.currentUser.email,
   })
   // Destructuring hooks
   const { name, email } = formData

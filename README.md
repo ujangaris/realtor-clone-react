@@ -215,3 +215,25 @@
         - buat content profile
     2.  npm start : http://localhost:3000/profile
         - akan ada tampilan profile page
+
+### Private Route for protecting profile page
+
+    todo:
+    1.  pages/Profile.jsx
+        - import dan pasang getAuth dari firebase/auth
+    2.  components/PrivateRoute.jsx
+        - rafc
+        - menerapkan hooks untuk mengecek status pengguna
+    3.  App.jsx
+        - import dan pasang PrivateRoute
+        - bungkus path Profile kedalam PrivateRoute
+    4.  src/hooks/useAuthStatus.jsx
+        - rafc
+        - deklarasi hooks
+        - useEffect untuk mengecek user
+        - rubah  setCheckingStatus menjadi false
+    5.  npm start : http://localhost:3000/sign-in
+        - lakukan login dengan google
+        - kemudian coba buka page profile : http://localhost:3000/profile
+        - jika sudah login akan berhasil terbuka halaman profile
+        - jika belum login akan diredirect ke halaman login
