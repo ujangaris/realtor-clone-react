@@ -263,3 +263,15 @@
     2.  npm start : http://localhost:3000/profile
         - klik edit, kemudian rubah name ,lalu apply change
         - jika berhasil akan ada pesan alert dari toastify dan perubahan tersimpan ke firebase
+
+### Complete the header component and make it dynamic Sign in & Profile Menu
+
+    todo:
+    1.  components/Header.jsx
+        - deklarasi hooks pageState
+        - pasang getAuth()
+        - pasang useEffect
+        - gunakan pageState untuk mendinamyc kan menu Profile & Sign in
+    2.  npm start : http://localhost:3000/profile
+        - ketka sudah login menu akan menampilkan Profile
+        - jika sudah logout menu akan menampilkan Sign in
