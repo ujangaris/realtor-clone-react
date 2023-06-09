@@ -247,3 +247,19 @@
         - pasang onLogout pada button logout
     2.  npm start : http://localhost:3000/profile
         - klik logout,jika berhasil akan diredirect kehalaman home
+
+### Add the edit functionality to the profile page
+
+    todo:
+    1.  pages/Profile.jsx
+        - import dan pasang hooks changeDetail
+        - pasang function onChange
+        - pasang fuction on submit
+        - update displayName in firebase auth
+        - update name in the firestore
+        - disable dipasangi logic
+        - edit dipasangi onClick agar bisa event bsia dijalankan
+        - pasang juga logic changeDetail pada edit
+    2.  npm start : http://localhost:3000/profile
+        - klik edit, kemudian rubah name ,lalu apply change
+        - jika berhasil akan ada pesan alert dari toastify dan perubahan tersimpan ke firebase
