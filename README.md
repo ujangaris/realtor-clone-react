@@ -204,3 +204,14 @@
         - buka email , akan ada pesan masuk, kemudian klik link reset password
         - jika selesai coba login dan masukan password yang baru
 
+## Bagian:4 Profile page
+
+### Create form profile page
+
+    todo:
+    1.  pages/Profile.jsx
+        - deklarasi hooks
+        - Destructuring hooks
+        - buat content profile
+    2.  npm start : http://localhost:3000/profile
+        - akan ada tampilan profile page
