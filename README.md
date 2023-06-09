@@ -275,3 +275,21 @@
     2.  npm start : http://localhost:3000/profile
         - ketka sudah login menu akan menampilkan Profile
         - jika sudah logout menu akan menampilkan Sign in
+
+### Create Loading /Spinner components
+
+    todo:
+    1.  Spinner Generator
+        - https://loading.io/
+        - export / download spinner dalam bentuk svg
+        - letakan file svg pada src/assets/svg/spinner.svg(kasih nama spinner)
+    2.  components/Loading.jsx
+        - rafc
+        - import dan pasang spinner.svg di dalam img
+        - styling img
+    3.  components/PrivateRoute.jsx
+        - import dan pasang Loading
+    4.  npm start : http://localhost:3000/profile
+        - ketka sudah login menu akan menampilkan Profile
+        - kemudian resfresh halaman profile
+        - jika berhasil akan ada animation loading/spinner
