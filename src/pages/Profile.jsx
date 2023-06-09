@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { getAuth } from 'firebase/auth'
+import { useNavigate } from 'react-router-dom'
 
 export const Profile = () => {
   const auth = getAuth()
+  // pasang usenavigate
+  const navigate = useNavigate()
   // deklarasi hooks
   const [formData, setFormData] = useState({
     name: auth.currentUser.displayName,
@@ -10,6 +13,11 @@ export const Profile = () => {
   })
   // Destructuring hooks
   const { name, email } = formData
+  // pasang function onLogout
+  const onLogout = async () => {
+    await auth.signOut()
+    navigate('/')
+  }
   return (
     <>
       {/* buat content profile */}
@@ -40,7 +48,10 @@ export const Profile = () => {
                   Edit
                 </span>
               </p>
-              <p className='text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out cursor-pointer'>
+              <p
+                onClick={onLogout}
+                className='text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out cursor-pointer'
+              >
                 Sign out
               </p>
             </div>

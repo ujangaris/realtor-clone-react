@@ -237,3 +237,13 @@
         - kemudian coba buka page profile : http://localhost:3000/profile
         - jika sudah login akan berhasil terbuka halaman profile
         - jika belum login akan diredirect ke halaman login
+
+### Logout functionality
+
+    todo:
+    1.  pages/Profile.jsx
+        - import dan pasang usenavigate
+        - pasang function onLogout
+        - pasang onLogout pada button logout
+    2.  npm start : http://localhost:3000/profile
+        - klik logout,jika berhasil akan diredirect kehalaman home
